@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Uploader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #6f42c1;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .file-uploader {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      color: #000;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .file-uploader h5 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .file-item {
+      background: #f1f1f1;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      overflow-x: scroll;
+    }
+
+    .file-item .status {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    .file-uploader .upload-area {
+      border: 2px dashed #ddd;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .file-uploader .upload-area:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="file-uploader">
+    <h5>FILE UPLOADER</h5>
+    <div class="file-items" id="file-items">
+
+    </div>
+
+    <div class="upload-area">
+      <p>Drag And Drop file or Browse</p>
+      <input type="file" class="file-input" hidden>
+    </div>
+  </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
